@@ -1,0 +1,12 @@
+public class even {
+
+    public static void main(String[] args) {
+        int i=0,num=0;
+        System.out.println("Even numbers");
+        do {
+            System.out.println(num);
+            i=i+1;
+            num=num+2;
+        }while(i<=10);
+    }
+}
