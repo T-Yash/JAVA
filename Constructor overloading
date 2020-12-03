@@ -1,0 +1,29 @@
+package constructoroverloading;
+public class ConstructorOverloading {
+   private int stuID;
+   private String stuName;
+   private int stuAge;
+   ConstructorOverloading(){
+       stuID = 100;
+       stuName = "New Student";
+       stuAge = 18;
+   }
+   ConstructorOverloading(int num1, String str, int num2){
+       stuID = num1;
+       stuName = str;
+       stuAge = num2;
+   }
+   public void show(){
+   System.out.println("Student Id is"+stuID);
+   System.out.println("Student Name is"+stuName);
+   System.out.println("Student Age is"+stuAge);
+   }
+   public static void main(String[] args) {       
+       ConstructorOverloading myobj = new ConstructorOverloading();
+        System.out.println("Default Constructor");
+        myobj.show();
+        System.out.println("Parameterized Constructor");
+        ConstructorOverloading myobj2 = new ConstructorOverloading(555, "Chaitanya", 25);
+        myobj2.show();
+   }
+}
