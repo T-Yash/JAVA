@@ -1,0 +1,22 @@
+package multipleinheritance;
+interface InterfaceRead {
+   void read();
+}
+interface InterfaceWrite {
+   void write();
+}
+class Interface implements InterfaceRead, InterfaceWrite{
+    public void read() {
+    System.out.println("Reading");    
+    }
+    public void write() {
+       System.out.println("Writing");
+    }
+}
+public class MultipleInheritance{
+    public static void main(String[] args) {
+      Interface in= new Interface();
+      in.read();
+      in.write();
+    }  
+}
