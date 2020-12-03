@@ -1,0 +1,16 @@
+package methodoverload;
+
+public class MethodOverload {
+
+    private static void sum(int a,long b){
+        System.out.println(a+b);
+    }  
+  private static void sum(int a,int b,int c){
+      System.out.println(a+b+c);
+  } 
+    public static void main(String[] args) {
+        sum(20,20);
+        sum(20,20,20);
+    }
+    
+}
