@@ -1,0 +1,13 @@
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+public class NewApplet extends Applet {
+    public void init() {
+        // TODO start asynchronous download of heavy resources
+    }
+    public void paint(Graphics g){
+
+g.drawString("hello world",150,150);  
+ 
+    }
+}
